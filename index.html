@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Sala Virtual</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Font Awesome CSS -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+        <link href="css/animate.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+
+        <!-- Template js -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/jquery.appear.js"></script>
+        <script src="js/contact_me.js"></script>
+        <script src="js/jqBootstrapValidation.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/script.js"></script>
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+		
+		<script type="text/javascript">		
+		   function enviar(){
+		   			Nombre = document.getElementById("txtNombre").value;			
+					Correo = document.getElementById("txtCorreo").value;			
+					Asunto = document.getElementById("txtAsunto").value;			
+					Telefono = document.getElementById("txtTelefono").value;			
+					Consulta = document.getElementById("txtConsulta").value;			
+					Error = "";			
+					if(Nombre == "" || Nombre==" ")				
+					   Error += "   Nombre\n";			
+					if(Correo == "" || Correo==" ")				
+					   Error += "   Correo\n";
+					if(Telefono == "" || Telefono==" ")				
+					   Error += "   Telefono\n";			
+					if(Asunto == "" || Asunto==" ")				
+					   Error += "   Asunto\n";			
+					if(Consulta == "" || Consulta==" ")				
+					   Error += "   Consulta\n";							
+					if(Error != "")				
+					   alert("Favor de completar la siguiente informacion\n" + Error);			
+					 else				
+					   frmCorreo.submit();		
+					}
+		</script>		
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-80302134-1', 'auto');
+		  ga('send', 'pageview');
+		</script>
+
+    </head>
+    
+    <body background="./img/fondo1.jpg">
+        <!-- Start Logo Section -->
+        <section id="logo-section" class="text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="index.html">
+                        <div class="logo text-center">
+                            <h1>Sala Virtual</h1>
+                            <!--<span><b>Canal Informartivo</b></span>-->
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Logo Section --> 
+        
+        <!-- Start Main Body Section -->
+        <div class="mainbody-section text-center">
+            <div class="container">
+                <div class="row">
+                    
+                    <!-- Primera Columna -->
+                    <div class="col-md-4">
+
+                        <!-- Botón 1 -->
+                        <div class="menu-item Grafito">
+                            <a href="administracion_comite/administracioncomite.html" data-toggle="modal">
+                                <i class="fa fa-user"></i>
+                                <p>Administrador</p>
+                            </a>
+                        </div>
+
+                        <!-- Botón 2 -->
+                        <div class="menu-item gris">
+                            <a href="#contact-modal" data-toggle="modal">
+                                <i class="fa fa-envelope-o"></i>
+                                <p>Contáctenos</p>
+                            </a>                            
+                        </div>
+
+                        <!-- Botón 3 -->
+                        <div class="menu-item Grafito">
+                            <a href="./salud_belleza/saludbelleza.html" data-toggle="modal">
+                                <i class="fa fa-bell-o"></i>
+                                <p>Avisos</p>
+                            </a>
+                        </div>     
+                        
+                        <!-- Botón 4 -->
+                        <div class="menu-item gris">
+                            <a href="./salud_belleza/saludbelleza.html" data-toggle="modal">
+                                <i class="fa fa-sliders"></i>
+                                <p>Bandas</p>
+                            </a>
+                        </div>                                          
+                    </div>
+
+                    <!-- Segunda Columna -->                    
+                    <div class="col-md-4">
+
+                        <!-- Botón 5 -->
+                        <div class="menu-item Grafito">
+                            <a href="./centros_estudios/centrosestudios.html" data-toggle="modal">
+                                <i class="fa fa-star    "></i>
+                                <p>Tocatas</p>
+                            </a>
+                        </div>
+
+                        <!-- Botón 6 -->
+                        <div class="menu-item gris">
+                            <a href="./venta_arriendos/ventayarriendos.html" data-toggle="modal">
+                                <i class="fa fa-smile-o"></i>
+                                <p>Clases & Asesorías</p>
+                            </a>
+                        </div>
+
+                        <!-- Botón 7 -->
+                        <div class="menu-item Grafito">
+                            <a href="./todo_comidas/todocomidas.html" data-toggle="modal">
+                                <i class="fa fa-thumb-tack"></i>
+                                <p>Clasificados</p>
+                            </a>
+                       </div>      
+                       
+                        <!-- Botón 8 -->
+                        <div class="menu-item gris">
+                            <a href="./todo_comidas/todocomidas.html" data-toggle="modal">
+                                <i class="glyphicon glyphicon-shopping-cart"></i>
+                                <p>Arriendos</p>
+                            </a>
+                       </div> 
+                    </div>
+                    
+                    
+                    <!-- Tercera Columna -->
+                    <div class="col-md-4">
+
+                        <!-- Botón 9 -->
+                        <div class="menu-item Grafito">
+                            <a href="./todo_comidas/todocomidas.html" data-toggle="modal">
+                                <i class="fa fa-music"></i>
+                                <p>Tiendas Música</p>
+                            </a>
+                       </div>
+                       
+                       <!-- Botón 10 -->
+                        <div class="menu-item gris">
+                            <a href="./clasificados/clasificados.html" data-toggle="modal">
+                                <i class="fa fa-lightbulb-o"></i>
+                                <p>Buenos Datos</p>
+                            </a>
+                        </div>
+
+                        <!-- Botón 11 -->
+                        <div class="menu-item Grafito">
+                            <a href="./todo_mascotas/todomascotas.html" data-toggle="modal">
+                                <i class="fa fa-calendar"></i>
+                                <p>Actividades</p>
+                            </a>
+                        </div>
+
+                        <!-- Botón 12 -->
+                        <div class="menu-item gris">
+                            <a href="./transporte/transporte.html" data-toggle="modal">
+                                <i class="fa fa-pencil-square-o"></i>
+                                <p>Sugerencias & Comentarios</p>
+                            </a>
+                        </div>                                                   
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <!-- End Main Body Section -->
+        
+        <!-- Start Copyright Section -->
+        <div class="copyright text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>Diseñado por <a href="http://www.gestiontec.cl" target="_blank">GestionTEC.cl</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Copyright Section -->
+        
+        
+ <!-- *** Sección Contacto *** -->
+ <!-- Sección Contacto -->
+        <div class="section-modal modal fade contact" id="contact-modal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title text-center">
+                            <h3>Contáctenos</h3>
+                            <p>Completa el siguiente formulario y te responderemos lo antes posible tú consulta.</p>
+                        </div>
+                    </div>
+
+                    <div class="row" style="padding-top: 1px;">
+                        <div class="col-md-12">
+                            <form action="./contacto_dmv/contacto_mail.php" target="_top" id="frmCorreo" method="POST">
+                              <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+										
+										<input type="text" class="form-control" id="txtNombre" name="txtNombre" placeholder="Tú Nombre *"   required data-validation-required-message="Por favor ingresa tú Nombre."/>
+											
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+										
+						<input type="email" class="form-control" id="txtCorreo" placeholder="Tú Correo *" id="txtCorreo" required data-validation-required-message="Por favor ingresa tú Correo.">	
+																														
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                        <div class="form-group">
+											<input type="text" id="txtTelefono" name="txtTelefono" class="form-control" placeholder="Tú Teléfono *" required data-validation-required-message="Por favor ingresa tú Teléfono."/>
+											
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+											<input type="text" id="txtAsunto" name="txtAsunto" class="form-control"  placeholder="Número Casa *"  required data-validation-required-message="Por favor ingresa Número Casa"/>
+											
+											
+                                            <p class="help-block text-danger"></p>
+                                        </div>                                     
+                                        <div class="form-group">
+											<textarea class="form-control" id="txtConsulta" name="txtConsulta" placeholder="Tú Consulta *"  required data-validation-required-message="Por favor ingresa tú Consulta."></textarea>
+											
+											
+                                            <p class="help-block text-danger"></p>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="clearfix"></div>
+                                    <div class="col-lg-12 text-center">
+                                        <div id="success"></div>
+                                        <input type="button" id="btnEnviar" class="btn btn-primary" value="Enviar Consulta" onClick="enviar();"/>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Fin Sección Contacto -->
+		
+    </body>
+</html>
